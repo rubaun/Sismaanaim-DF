@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SisMaanaim - Maanaim-DF</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-4.4.1/dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand">SisMaanaim</a>
+            </div>
+        </nav>
+    </header>
+    
+        <div class="container-fluid">
+          <main>
+            <div class="flex-wrap">
+        
+                <div class="row">
+                    <!--Inínio Coluna/Menu-->
+                    <nav class="col-xl-2 col-lg-2 col-md-3 navbar-expand-md navbar-toggleable-md sidebar sticky-top bg-white border border-right border-light">
+                        <button class="navbar-toggler m-2 text-white bg-info" type="button" data-toggle="collapse" data-target="#navbarContent"
+                                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i><span>&nbsp;Menu Sistema</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <div class="sidebar-sticky">
+                                <div class="sidebar-heading">
+                                    <hr />
+                                    <div class="media">
+                                        <h1><span class="fa fa-user align-self-center mr-2 text-secondary"></span></h1>
+                                        <div class="media-body text-secondary ">
+                                        <h5>Lindolfo<small class="text-nowrap"> Operador de Caixa</small></h5>
+                                        </div>
+                                    </div>
+                                        <div class="clearfix d-flex flex-wrap">
+                                            <a class="badge badge-info flex-fill" href="#"><span class="fa fa-key"></span> SENHA</a>
+                                            <a class="badge badge-info flex-fill ml-2" href="index.html"><span class="fa fa-sign-out-alt"></span> SAIR</a>
+                                        </div>
+                                    
+                                    <hr />
+                                </div>
+                                <ul class="nav nav-pills flex-column justify-content">
+    
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fas fa-home"></span> Painel
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-credit-card"></span> Vender
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-donate"></span> Carregar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-comment-dollar"></span> Consultar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-arrow-circle-left"></span> Estornar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-hand-holding-usd"></span> Devolução
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-save"></span> Sangria
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <span class="fa fa-chart-pie"></span>Histórico
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" data-toggle="dropdown" href="#">Caixa</a>
+                                            <a class="dropdown-item" data-toggle="dropdown" href="#">Cliente</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="pill" href="#">
+                                            <span class="fa fa-save"></span> Abastecimento
+                                        </a>
+                                    </li>
+                                    
+    
+                                </ul>
+                                <hr />
+                                
+                                    <a class="d-flex align-items-center btn btn-danger btn-block text-center" href="#">
+                                        <span class="fa fa-exclamation-circle"></span>&nbsp;Ocorrência
+                                    </a>
+                               
+                                <hr />
+                            </div>
+                        </div>
+                    </nav>
+                    <!--Fim Coluna/Menu-->
+                    <!--Inínio ConteúdoPrincipal-->
+                    <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 ml-sm-auto px-4">
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h1 class="h2">Painel de Controle</h1>
+                            <div class="alert alert-warning alert-dismissible">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <strong>Alerta!</strong> Caixa ocioso a 5 minutos.
+                              </div>
+                        </div>
+                        <div class="container-fluid d-flex flex-wrap justify-content-center">
+                            <div class="row d-flex flex-row flex-fill col-12 col-sm-12 col-lg-12 bg-success text-white rounded-lg p-1 m-1">
+                                <div class="text text-center text-dark bg-white h3 col-lg-12 rounded-lg font-weight-bolder">EM CAIXA</div>
+                                <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Abertura</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Créditos</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Débitos</strong><br>R$ 211,86</div>
+                                <div class="col-12 col-sm-12 col-lg-12 text text-center pt-1 h5 text-nowrap border-top"><strong>Total: </strong>R$ 211,86</div>
+                            </div>
+                            <!-- OUTROS PAINEIS
+                            <div class="row d-flex flex-row flex-fill col-12 col-sm-4 col-lg-3 bg-danger text-white rounded-lg p-1 m-1">
+                                <div class="text text-center text-dark bg-white h3 col-lg-12 rounded-lg font-weight-bolder">ESTORNO</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Abertura</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Créditos</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Débitos</strong><br>R$ 211,86</div>
+                                <div class="col-12 col-sm-12 col-lg-12 text text-center pt-3 h6"><strong>Total</strong><br>R$ 211,86</div>
+                            </div>    
+                            <div class="row d-flex flex-row flex-fill col-12 col-sm-4 col-lg-3 bg-warning text-dark rounded-lg p-1 m-1">
+                                <div class="text text-center text-dark bg-white h3 col-lg-12 rounded-lg font-weight-bolder">SANGRIA</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Abertura</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Créditos</strong><br>R$ 211,86</div>
+                                <div class="col-4 col-sm-4 col-lg-4 text text-center small"><strong>Débitos</strong><br>R$ 211,86</div>
+                                <div class="col-12 col-sm-12 col-lg-12 text text-center pt-3 h6"><strong>Total</strong><br>R$ 211,86</div>
+                            </div>
+                            -->
+                        </div>
+                        <!-- ATALHOS -->
+                        
+                        <div class="d-flex flex-row col-lg-12 col-12 flex-wrap justify-content-center mt-5">
+                            
+                            <button type="button" class="btn btn-info col-11 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#vendaCartaoAtalho">
+                                <i class="fa fa-credit-card"></i> Vender Cartão</button>
+                           
+                            <button type="button" class="btn btn-info col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#carregarCartaoAtalho">
+                                <i class="fa fa-donate"></i> Carregar Cartão</button>
+                            
+                            <button type="button" class="btn btn-info col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#consultarCartaoAtalho">
+                                <i class="fa fa-comment-dollar"></i> Consultar Saldo</button>
+                            
+                            <button type="button" class="btn btn-info col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#editarCartaoAtalho">
+                                <i class="fa fa-user-edit"></i> Editar Cliente</button>
+                            
+                            <button type="button" class="btn btn-info col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#cadastrarCartaoAtalho">
+                                <i class="fa fa-user-plus"></i> Cadastrar Cliente</button>
+                            
+                        </div>
+
+                        <!-- COLLAPSE DE VENDAS -->
+                        <div class="collapse collapsing col-12 col-lg-12 justify-content-lg-center" id="vendaCartaoAtalho">
+                            <form class="form-group mt-5">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option>Número do Cartão</option>
+                                                <option>Opção</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-money-bill-alt"></i></span>
+                                        </div>
+                                        <select class="form-control">
+                                            <option>Forma de Pagamento</option>
+                                            <option>Opção</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
+                                    </div>
+                                </div>
+                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">VENDER CARTÃO</button>
+                            </form>
+                        </div>
+                        <!-- COLLAPSE DE CARREGAMENTO -->
+                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="carregarCartaoAtalho">
+                            <form class="form-group mt-5">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option>Número do Cartão</option>
+                                                <option>Opção</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Valor Acrescido" id="valor" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
+                                    </div>
+                                </div>
+                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CARREGAR CARTÃO</button>
+                            </form>
+                        </div>
+                        <!-- COLLAPSE DE SALDO -->
+                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="consultarCartaoAtalho">
+                            <form class="form-group mt-5">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CONSULTAR SALDO</button>
+                            </form>
+                        </div>
+                        <!-- COLLAPSE DE EDIÇÃO -->
+                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="editarCartaoAtalho">
+                            <form class="form-group mt-5">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">INICIAR EDIÇÃO</button>
+                            </form>
+                        </div>
+                        <!-- COLLAPSE DE CADASTRAMENTO -->
+                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="cadastrarCartaoAtalho">
+                            <form class="form-group mt-5">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="Digite o CPF" id="cpf" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Digite o Nome" id="nome" />
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input type="tel" class="form-control" placeholder="Telefone" id="telefone" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                        </div>
+                                        <input type="email" class="form-control" placeholder="Email" id="email" />
+                                    </div>
+                                </div>
+                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CADASTRAR</button>
+                            </form>
+                        </div>
+
+                        <!-- CONTEÚDO ATALHOS -->
+                    </div>
+                    <!--Fim ConteúdoPrincipal-->
+                </div>
+    
+            
+            </div>
+          </main>  
+        </div>
+    
+    <footer class="border-top footer text-muted bg-white">
+        <div class="container">
+            <p class="small mt-2">Todos os Direitos Reservados &copy; 2019 - SisMaanaim - DF</p>
+        </div>
+    </footer>
+</body>
+</html>
