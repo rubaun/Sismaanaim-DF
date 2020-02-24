@@ -43,8 +43,8 @@
                                         </div>
                                     </div>
                                         <div class="clearfix d-flex flex-wrap">
-                                            <a class="badge badge-info flex-fill" href="#"><span class="fa fa-key"></span> SENHA</a>
-                                            <a class="badge badge-info flex-fill ml-2" href="index.html"><span class="fa fa-sign-out-alt"></span> SAIR</a>
+                                            <a class="badge badge-primary flex-fill" href="#"><span class="fa fa-key"></span> SENHA</a>
+                                            <a class="badge badge-danger flex-fill ml-2" href="index.html"><span class="fa fa-sign-out-alt"></span> SAIR</a>
                                         </div>
                                     
                                     <hr />
@@ -118,7 +118,7 @@
                     <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 ml-sm-auto px-4">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                             <h1 class="h2">Painel de Controle</h1>
-                            <div class="alert alert-warning alert-dismissible">
+                            <div class="alert alert-warning alert-dismissible bg-warning text-dark">
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                                 <strong>Alerta!</strong> Caixa ocioso a 5 minutos.
                               </div>
@@ -168,163 +168,164 @@
                                 <i class="fa fa-user-plus"></i> Cadastrar Cliente</button>
                             
                         </div>
-
-                        <!-- COLLAPSE DE VENDAS -->
-                        <div class="collapse collapsing col-12 col-lg-12 justify-content-lg-center" id="vendaCartaoAtalho">
-                            <form class="form-group mt-5">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
+                        <div id="accordion">
+                            <!-- COLLAPSE DE VENDAS -->
+                            <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="vendaCartaoAtalho" data-parent="#accordion">
+                                <form class="form-group mt-5">
+                                    <div class="form-group">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                </div>
+                                                <select class="form-control">
+                                                    <option>Número do Cartão</option>
+                                                    <option>Opção</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-money-bill-alt"></i></span>
                                             </div>
                                             <select class="form-control">
-                                                <option>Número do Cartão</option>
+                                                <option>Forma de Pagamento</option>
                                                 <option>Opção</option>
                                             </select>
                                         </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-money-bill-alt"></i></span>
-                                        </div>
-                                        <select class="form-control">
-                                            <option>Forma de Pagamento</option>
-                                            <option>Opção</option>
-                                        </select>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
-                                    </div>
-                                </div>
-                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">VENDER CARTÃO</button>
-                            </form>
-                        </div>
-                        <!-- COLLAPSE DE CARREGAMENTO -->
-                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="carregarCartaoAtalho">
-                            <form class="form-group mt-5">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
+                                    <div class="form-group">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
                                             </div>
-                                            <select class="form-control">
-                                                <option>Número do Cartão</option>
-                                                <option>Opção</option>
-                                            </select>
+                                            <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
                                         </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Valor Acrescido" id="valor" />
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
-                                    </div>
-                                </div>
-                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CARREGAR CARTÃO</button>
-                            </form>
-                        </div>
-                        <!-- COLLAPSE DE SALDO -->
-                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="consultarCartaoAtalho">
-                            <form class="form-group mt-5">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CONSULTAR SALDO</button>
-                            </form>
-                        </div>
-                        <!-- COLLAPSE DE EDIÇÃO -->
-                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="editarCartaoAtalho">
-                            <form class="form-group mt-5">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">INICIAR EDIÇÃO</button>
-                            </form>
-                        </div>
-                        <!-- COLLAPSE DE CADASTRAMENTO -->
-                        <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="cadastrarCartaoAtalho">
-                            <form class="form-group mt-5">
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="number" class="form-control" placeholder="Digite o CPF" id="cpf" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
+                                    <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">VENDER CARTÃO</button>
+                                </form>
+                            </div>
+                            <!-- COLLAPSE DE CARREGAMENTO -->
+                            <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="carregarCartaoAtalho" data-parent="#accordion">
+                                <form class="form-group mt-5">
+                                    <div class="form-group">
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Digite o Nome" id="nome" />
+                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
                                         </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
-                                        </div>
-                                        <input type="tel" class="form-control" placeholder="Telefone" id="telefone" />
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
-                                        </div>
-                                        <input type="email" class="form-control" placeholder="Email" id="email" />
+                                    <div class="form-group">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                </div>
+                                                <select class="form-control">
+                                                    <option>Número do Cartão</option>
+                                                    <option>Opção</option>
+                                                </select>
+                                            </div>
                                     </div>
-                                </div>
-                                <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CADASTRAR</button>
-                            </form>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Valor Acrescido" id="valor" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CARREGAR CARTÃO</button>
+                                </form>
+                            </div>
+                            <!-- COLLAPSE DE SALDO -->
+                            <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="consultarCartaoAtalho" data-parent="#accordion">
+                                <form class="form-group mt-5">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CONSULTAR SALDO</button>
+                                </form>
+                            </div>
+                            <!-- COLLAPSE DE EDIÇÃO -->
+                            <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="editarCartaoAtalho" data-parent="#accordion">
+                                <form class="form-group mt-5">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">INICIAR EDIÇÃO</button>
+                                </form>
+                            </div>
+                            <!-- COLLAPSE DE CADASTRAMENTO -->
+                            <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="cadastrarCartaoAtalho" data-parent="#accordion">
+                                <form class="form-group mt-5">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                            </div>
+                                            <input type="number" class="form-control" placeholder="Digite o CPF" id="cpf" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Digite o Nome" id="nome" />
+                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="tel" class="form-control" placeholder="Telefone" id="telefone" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-at"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control" placeholder="Email" id="email" />
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CADASTRAR</button>
+                                </form>
+                            </div>
                         </div>
-
-                        <!-- CONTEÚDO ATALHOS -->
+                        <!-- FIM CONTEÚDO ATALHOS -->
                     </div>
+                      
                     <!--Fim ConteúdoPrincipal-->
                 </div>
     
