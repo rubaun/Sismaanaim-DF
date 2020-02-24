@@ -28,7 +28,7 @@
                 <div class="row">
                     <!--Inínio Coluna/Menu-->
                     <nav class="col-xl-2 col-lg-2 col-md-3 navbar-expand-md navbar-toggleable-md sidebar sticky-top bg-white border border-right border-light">
-                        <button class="navbar-toggler m-2 text-white bg-info" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        <button class="navbar-toggler m-2 text-white bg-info btn-block" type="button" data-toggle="collapse" data-target="#navbarContent"
                                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fa fa-bars"></i><span>&nbsp;Menu Sistema</span>
                         </button>
@@ -118,18 +118,19 @@
                     <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 ml-sm-auto px-4">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                             <h1 class="h2">Painel de Controle</h1>
-                            <div class="alert alert-warning alert-dismissible bg-warning text-dark">
+                            <div class="alert alert-warning alert-dismissible bg-warning text-dark col-12 col-lg-3">
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                                 <strong>Alerta!</strong> Caixa ocioso a 5 minutos.
                               </div>
                         </div>
                         <div class="container-fluid d-flex flex-wrap justify-content-center">
-                            <div class="row d-flex flex-row flex-fill col-12 col-sm-12 col-lg-12 bg-success text-white rounded-lg p-1 m-1">
+                            <div class="row d-flex flex-row flex-fill col-12 col-sm-12 col-lg-12 bg-success text-white rounded-lg p-1 m-1 overflow-hidden">
                                 <div class="text text-center text-dark bg-white h3 col-lg-12 rounded-lg font-weight-bolder">EM CAIXA</div>
                                 <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Abertura</strong><br>R$ 211,86</div>
                                 <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Créditos</strong><br>R$ 211,86</div>
                                 <div class="col-4 col-sm-4 col-lg-4 pb-1 text text-center small"><strong>Débitos</strong><br>R$ 211,86</div>
                                 <div class="col-12 col-sm-12 col-lg-12 text text-center pt-1 h5 text-nowrap border-top"><strong>Total: </strong>R$ 211,86</div>
+                                <i class="fa fa-shopping-cart position-absolute m-n4 pt-5" style="font-size:7rem;opacity: 20%;"></i>
                             </div>
                             <!-- OUTROS PAINEIS
                             <div class="row d-flex flex-row flex-fill col-12 col-sm-4 col-lg-3 bg-danger text-white rounded-lg p-1 m-1">
@@ -177,7 +178,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                            <input type="number" class="form-control" placeholder="Digite seu CPF" id="cpf" />
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -207,7 +208,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
+                                            <input type="number" class="form-control" placeholder="Valor Pago" id="valor" />
                                         </div>
                                     </div>
                                     <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">VENDER CARTÃO</button>
@@ -221,7 +222,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                            <input type="number" class="form-control" placeholder="Digite seu CPF" id="cpf" />
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -240,7 +241,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Valor Acrescido" id="valor" />
+                                            <input type="number" class="form-control" placeholder="Valor Acrescido" id="valor" />
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -248,7 +249,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-dollar-sign"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Valor Pago" id="valor" />
+                                            <input type="number" class="form-control" placeholder="Valor Pago" id="valor" />
                                         </div>
                                     </div>
                                     <button type="submit" class="bnt btn-info btn-lg btn-block mx-auto d-block rounded">CARREGAR CARTÃO</button>
@@ -262,7 +263,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                            <input type="number" class="form-control" placeholder="Digite seu CPF" id="cpf" />
                                         </div>
                                     </div>
                                     
@@ -277,7 +278,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fa fa-user"></i></span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="Digite seu CPF" id="cpf" />
+                                            <input type="number" class="form-control" placeholder="Digite seu CPF" id="cpf" />
                                         </div>
                                     </div>
                                     
