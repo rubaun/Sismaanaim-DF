@@ -117,10 +117,10 @@
                     <!--Inínio ConteúdoPrincipal-->
                     <div class="col-12 col-xl-10 col-lg-10 col-md-9 col-sm-12 ml-sm-auto px-4">
                         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                            <h1 class="h4">Painel de Controle</h1>
-                            <div class="alert alert-warning alert-dismissible bg-warning text-dark col-12 col-lg-3">
+                            <h1 class="h5">Painel de Controle</h1>
+                            <div class="alert alert-warning alert-dismissible bg-warning text-dark small col-12 col-lg-3">
                                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                <strong>Alerta!</strong> Caixa ocioso a 5 minutos.
+                                <strong>Alerta!</strong> <i class="fa fa-clock"></i> Caixa ocioso a 5 minutos.
                               </div>
                         </div>
                         <div class="container-fluid d-flex flex-wrap justify-content-center">
@@ -153,19 +153,19 @@
                         
                         <div class="d-flex flex-row col-lg-12 col-12 flex-wrap justify-content-center mt-5">
                             
-                            <button type="button" class="btn btn-primary col-11 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#vendaCartaoAtalho">
+                            <button type="button" class="btn btn-secondary col-11 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#vendaCartaoAtalho">
                                 <i class="fa fa-credit-card"></i> Vender Cartão</button>
                            
-                            <button type="button" class="btn btn-primary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#carregarCartaoAtalho">
+                            <button type="button" class="btn btn-secondary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#carregarCartaoAtalho">
                                 <i class="fa fa-donate"></i> Carregar Cartão</button>
                             
-                            <button type="button" class="btn btn-primary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#consultarCartaoAtalho">
+                            <button type="button" class="btn btn-secondary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#consultarCartaoAtalho">
                                 <i class="fa fa-comment-dollar"></i> Consultar Saldo</button>
                             
-                            <button type="button" class="btn btn-primary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#editarCartaoAtalho">
+                            <button type="button" class="btn btn-secondary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#editarCartaoAtalho">
                                 <i class="fa fa-user-edit"></i> Editar Cliente</button>
                             
-                            <button type="button" class="btn btn-primary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#cadastrarCartaoAtalho">
+                            <button type="button" class="btn btn-secondary col-5 col-lg-2 m-1 text-nowrap" data-toggle="collapse" data-target="#cadastrarCartaoAtalho">
                                 <i class="fa fa-user-plus"></i> Cadastrar Cliente</button>
                             
                         </div>
@@ -213,6 +213,7 @@
                                     </div>
                                     <button type="submit" class="bnt btn-primary btn-lg btn-block mx-auto d-block rounded">VENDER CARTÃO</button>
                                 </form>
+                            <span id="vendas_atalho"></span>
                             </div>
                             <!-- COLLAPSE DE CARREGAMENTO -->
                             <div class="collapse col-12 col-lg-12 justify-content-lg-center" id="carregarCartaoAtalho" data-parent="#accordion">
